@@ -1,0 +1,35 @@
+.navigationbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  padding: 15px 30px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box; /* Ensures padding is included in width */
+  z-index: 100;
+}
+
+.navigationbar-brand a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.navigationbar-links li {
+  display: inline;
+  margin: 0 20px;
+}
+
+.navigationbar-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.navigationbar-links a:hover {
+  color: #00f;
+}
