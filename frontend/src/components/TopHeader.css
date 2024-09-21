@@ -1,0 +1,69 @@
+.div {
+    background-color: var(--bg);
+    height: 1561px;
+    position: relative;
+    width: 100%; /* Set width to 100% to make it responsive */
+    max-width: 1440px; /* Optional: to limit the maximum width */
+    margin: 0 auto; /* Center the div horizontally */
+    
+}
+.top-header {
+    background-color: var(--button);
+    height: 48px;
+    position: relative;
+    width: 100%;
+}
+
+.frame {
+    display: flex;
+    justify-content: center; /* Center the entire frame-2 within the frame */
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.frame-2 {
+    display: flex;
+    justify-content: space-between; /* Space between text and language selector */
+    align-items: center;
+    width: 100%; /* Full width to allow centering */
+    max-width: 1440px; /* Optionally cap the width */
+    position: relative;
+}
+
+.text-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-align: center;
+    flex-grow: 1; /* Ensure it takes up available space and stays centered */
+}
+
+.text-wrapper, .text-wrapper-2 {
+    color: var(--text); /* Ensure that this is set to a visible color */
+    white-space: nowrap; /* Prevents text from breaking to a new line */
+}
+
+.frame-3 {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: flex-end; /* Align dropdown to the right */
+    flex-shrink: 0; /* Prevent it from shrinking when screen size decreases */
+}
+
+.text-wrapper-3 {
+    color: var(--text);
+    font-family: var(--title-14px-regular-font-family);
+    font-size: var(--title-14px-regular-font-size);
+    font-style: var(--title-14px-regular-font-style);
+    font-weight: var(--title-14px-regular-font-weight);
+    white-space: nowrap;
+}
+
+.icon-instance-node {
+    height: 24px;
+    width: 24px;
+}

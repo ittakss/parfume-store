@@ -1,35 +1,93 @@
-.navigationbar {
+.header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  background-color: #000;
-  padding: 15px 30px;
-  position: fixed;
-  top: 0;
+  justify-content: space-between;
+  position: relative;
   width: 100%;
-  box-sizing: border-box; /* Ensures padding is included in width */
-  z-index: 100;
+  box-sizing: border-box;
+  top: 20px;
+  max-width: 1440px; /* Limit the maximum width */
+  margin: 0 auto; /* Center the header horizontally */
 }
 
-.navigationbar-brand a {
-  color: white;
-  text-decoration: none;
-  font-size: 24px;
-  font-weight: 700;
+.frame-4 {
+  display: flex;
+  align-items: center;
+  position: relative; /* Ensure relative positioning for centering frame-5 */
+  width: 100%;
 }
 
-.navigationbar-links li {
-  display: inline;
-  margin: 0 20px;
+.logo {
+  height: 24px;
+  width: 118px;
+  position: relative;
+  flex-grow: 0; /* Prevent the logo from growing */
 }
 
-.navigationbar-links a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 500;
+.text-wrapper-4 {
+  color: var(--text-2);
+  font-family: var(--heading-24px-bold-font-family);
+  font-size: var(--heading-24px-bold-font-size);
+  font-style: var(--heading-24px-bold-font-style);
+  font-weight: var(--heading-24px-bold-font-weight);
+  letter-spacing: var(--heading-24px-bold-letter-spacing);
+  line-height: var(--heading-24px-bold-line-height);
+  white-space: nowrap;
 }
 
-.navigationbar-links a:hover {
-  color: #00f;
+.frame-5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px; /* Space between menu items */
+  position: absolute; /* Position absolute to avoid being influenced by other elements */
+  left: 50%; /* Aligns the frame-5 to the center of frame-4 */
+  transform: translateX(-50%); /* Adjust for centering */
+}
+
+.div-wrapper {
+  height: 24px;
+  width: 48px;
+  position: relative;
+}
+
+.text-wrapper-5 {
+  color: var(--text-2);
+  font-family: var(--title-16px-regular-font-family);
+  font-size: var(--title-16px-regular-font-size);
+  font-style: var(--title-16px-regular-font-style);
+  font-weight: var(--title-16px-regular-font-weight);
+  letter-spacing: var(--title-16px-regular-letter-spacing);
+  line-height: var(--title-16px-regular-line-height);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.search-component-set-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: flex-end; /* Push frame-3 to the right */
+  flex-shrink: 0; /* Prevent frame-3 from shrinking */
+  margin-left: auto; /* Ensure frame-3 stays on the far right */
+}
+
+
+.search-component-set {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondary);
+  border-radius: 4px;
+  padding: 7px 20px;
+  gap: 10px;
+  position: relative;
+}
+
+.frame-6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 34px;
+  position: relative;
 }
